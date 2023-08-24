@@ -28,7 +28,7 @@ public class WebDriverUtility {
 		 HashMap<String, Boolean> prefs=new HashMap<String, Boolean>();
 		 prefs.put("autofill.profile_enabled",false);
 		 options.setExperimentalOption("prefs", prefs);
-		     driver=new ChromeDriver();
+		     driver=new ChromeDriver(options);
 	 break;
 	 case"firefox":   driver=new FirefoxDriver();
 	 break;

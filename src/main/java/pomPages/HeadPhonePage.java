@@ -13,6 +13,10 @@ public class HeadPhonePage {
 	 @FindBy(xpath="//span[text()='boat rockerz 450']")
 	 private WebElement itemName ;
 	 
+	 @FindBy(xpath="")
+		private WebElement   clickCartIcon;
+		
+	 
 	 public HeadPhonePage(WebDriver driver) {
 		 PageFactory.initElements( driver,this);
 	 }
