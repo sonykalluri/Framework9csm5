@@ -7,7 +7,7 @@ import java.util.Random;
 public class JavaUtility{
  public int generateRandomNum(int limit) {
 	 Random random=new Random();
-	 return random.nextInt();
+	 return random.nextInt(limit);
  }
  public String getCurrentTime() {
 	 Date date=new Date();

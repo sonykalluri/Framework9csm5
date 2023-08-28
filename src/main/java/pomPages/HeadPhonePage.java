@@ -13,8 +13,9 @@ public class HeadPhonePage {
 	 @FindBy(xpath="//span[text()='boat rockerz 450']")
 	 private WebElement itemName ;
 	 
-	 @FindBy(xpath="")
-		private WebElement   clickCartIcon;
+	 @FindBy(xpath = "//*[name()='svg'][@id='cartIcon']")
+		private WebElement cartIcon;
+
 		
 	 
 	 public HeadPhonePage(WebDriver driver) {
@@ -31,5 +32,8 @@ public class HeadPhonePage {
 		public String getItemName()
 		{
 			return itemName.getText();
+		}
+		public void clickCartIcon() {
+			cartIcon.click();
 		}
 }

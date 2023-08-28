@@ -51,6 +51,11 @@ public class SignUpPage {
  			passwordTF.sendKeys(password);
  			confirmPasswordTF.sendKeys(password);
  			termsAndConditionsCB.click();
+ 			try {
+ 				Thread.sleep(3000);
+ 			} catch (InterruptedException e) {
+ 				e.printStackTrace();
+ 			}
  			registerButton.click();
  		}
  		

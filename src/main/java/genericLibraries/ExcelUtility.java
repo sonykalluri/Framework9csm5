@@ -52,7 +52,7 @@ public class ExcelUtility {
     	  
      }
 	
-	public void writeToExcel(String sheetName ,Object expectedTest,String status,String excelPath) {
+	public void writeToExcel(String sheetName ,String expectedTest,String status,String excelPath) {
 		DataFormatter df=new DataFormatter();
 		 Sheet sheet=workbook.getSheet(sheetName);
 		   for(int i=0;i<=sheet.getLastRowNum();i++) {
